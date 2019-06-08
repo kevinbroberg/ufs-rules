@@ -1,0 +1,1036 @@
+UFS Living Game Rules
+Last Updated: May 17th, 2019
+This document describes the complete rules for playing a game of the Universal Fighting System (UFS).
+It is not intended for players wishing to learn how to play; it is a technical document to be used primarily as a reference for handling advanced interactions.
+This document overrides any and all rules materials previously released for UFS.
+This is a living document, and will undergo updates on an as-needed basis.
+
+Version History:
+v0.2 - Initial public release (BETA) 4/16/15
+v0.3 - Minor updates (BETA) 7/9/15
+v0.4 - Minor updates (BETA) 6/7/2016
+v0.5 - New keywords update 10/25/2016
+v0.6 - Major updates 1/19/2018
+v0.7 - Minor updates 7/26/2018
+v0.8 - Minor updates 12/11/2018
+v0.9 - New keywords update 5/17/19
+
+TABLE OF CONTENTS
+A. General Rules
+    A.1 Objective of the Game
+    A.2 Deck Construction
+    A.3 Additional Rules
+    A.4 Rules Terminology
+B. Card Types and Properties
+    B.1 Characters
+    B.2 Attacks
+    B.3 Actions
+    B.4 Assets
+    B.5 Foundations
+    B.6 Common Properties
+C. Card States
+    C.1 Ready and Committed
+    C.2 Public, Private and Unknown
+    C.3 Valued and Valueless
+D. Game Zones
+    D.1 General
+    D.2 Public Zones
+    D.3 Private Zones
+    D.4 Unknown Zones
+E. Gameplay Basics
+    E.1 Starting the Game
+    E.2 Pause Conditions
+    E.3 Making a Control Check
+    E.4 Playing a Card or Ability
+F. Turn Sequence
+    F.1 Ready Phase
+    F.2 Combat Phase
+    F.3 End Phase
+    F.4 Additional Rules
+G. Attack Sequence
+    G.1 Enhance Step
+    G.2 Block Step
+    G.3 Damage Step
+    G.4 Attack Resolution
+    G.5 Additional Rules
+H. Abilities
+    H.1 Played Abilities – Construction
+    H.2 Played Abilities – Types
+    H.3 Played Abilities – Restrictions
+    H.4 Played Abilities – Costs
+    H.5 Played Abilities - General
+    H.6 Continuous Abilities
+I. Keywords
+    I.1 Keyword Traits
+    I.2 Keyword Abilities – General
+    I.3 Keyword Abilities - Text
+J. Effects
+    J.1 Effects – General
+    J.2 Effect States
+    J.3 Effect Classes
+    J.4 Referencing Values
+    J.5 Effect Limitations
+K. Instruction Glossary
+    K.1 Conflict Resolution
+    K.2 Implications
+    K.3 Definitions
+    K.4 Impacting Cards
+    K.5 Processes
+
+
+
+A. General Rules
+A.1 Objective of the Game
+    Players can win a game of UFS in either of two ways:
+    A.1.1 If a player's opponent has 0 or less vitality, that player wins the game.
+    A.1.2 If a player's opponent is unable to cycle their deck (see E.2.2), that player wins the game.
+
+A.2 Deck Construction
+    The following rules apply to a standard game of UFS. For deck construction rules for alternate formats, see the relevant tournament rules document(s).
+     A.2.1 A player's main deck must contain at least 60 cards, including their starting character.
+     A.2.2 No more than four copies of a card with a given name are allowed in the same deck, including the sideboard.
+        Note: See B.6.1 for more information on card names.
+
+A.3 Additional Rules
+    A.3.1 All cards should be played using their official text posted in the Rules Q+A forum (http://forums.jascogames.com/forums/forumdisplay.php?12-Rules-Q-amp-A).
+    A.3.2 Cards cannot change ownership in the course of gameplay.
+
+A.4 Rules Terminology
+    Some terms used throughout the rules, but that do not appear on card text, are defined here.
+    A.4.1 A "game event" is an occurrence in the game that can result in the execution of a fired effect, or the opening of a response window. If a game event is suspended or prevented, that means that no fired effects or response windows can result from the indicated rule or process.
+    A.4.2 A card's "publicity" is whether it is public or non-public (private or unknown).
+
+
+
+B. Card Types and Properties
+B.1 Characters
+    B.1.1 Characters use a distinct card frame from the other four types, with the name at the top.
+
+    B.1.2 Characters have some properties that are unique to this card type.
+
+        B.1.2.1 Hand Size: The number on the "cards" symbol.
+
+        B.1.2.2 Maximum Vitality: The number on the "first aid" symbol.
+
+         B.1.2.3 Gender: Characters will have a male or female sign located on their character. Characters without a gender sign are considered genderless.
+            B.1.2.3.1 On older cards, gender is designated with a “G: M”, “G: F” or “G: ??” (see B.1.2.4)
+
+        B.1.2.4 Vital Statistics: Older character cards have values in the section on the lower right side. These include a character's Gender (G), Height (Ht), Weight (Wt) and Blood Type (Bt).
+            B.1.2.4.1 These values may be question mark(s). (see J.4.4) If they are absent, they are considered to be question marks.
+
+B.2 Attacks
+    B.2.1 Attacks have an orange card frame.
+
+    B.2.2 Attacks have some properties that are unique to this card type.
+        B.2.2.1 Attack Zone: The location of the arrow next to the circle on the middle right side of the card. This designates whether it is a high, mid or low attack.
+            B.2.2.1.1 On older cards, there is an "x" instead of an arrow.
+            B.2.2.1.2 Any references to an attack's "zone" are referring to this property (not the zone of the block in B.6.3).
+        B.2.2.2 Speed: The number inside the circle on the middle right side of the card.
+        B.2.2.3 Damage: The number inside the "explosion" symbol on the middle right side of the card.
+
+B.3 Actions
+    B.3.1 Actions have a blue card frame.
+
+B.4 Assets
+    B.4.1 Assets have a green card frame.
+
+B.5 Foundations
+    B.5.1 Foundations have a gray card frame.
+
+B.6 Common Properties
+    The following properties are common to all card types.
+
+    B.6.1 Card Name: Located at the top of character cards, or on the left side of all other cards.
+        B.6.1.1 For character cards, the card name has two parts:
+            B.6.1.1.1 Character Name: The text name of the character
+                B.6.1.1.1.1 If an effect checks to see if a card "shares a name" with a character card, it refers to the character name.
+            B.6.1.1.2 Version: The number of dots or similar symbols next to the character name (for instance, 2 bullets on each side of a character name would mean it's version 2 of that character)
+
+    B.6.2 Difficulty: Located in the upper left corner.    
+
+    B.6.3 Block Zone (optional): The location of the "+" mark next to the shield symbol in the upper right corner of the card, if there is one.
+        B.6.3.1 On older cards, there is a circle instead of a shield symbol, and a "x" instead of a "+".
+
+    B.6.4 Block Modifier (optional): The number inside the shield symbol in the upper right corner of the card, if there is one.
+        B.6.4.1 On older cards, there is a circle instead of a shield symbol.
+        B.6.4.2 If an effect refers to a "+n block", it refers to a block modifier of +n.
+
+    B.6.5 Text Box: Located in the bottom half of the card.
+        B.6.5.1 Keyword Line (optional): Bolded or italicized terms at the top of the text box. (see I. Keywords)
+        B.6.5.2 Abilities (optional): Paragraph(s) located in the text box, below the keyword line if there is one. Each paragraph is a separate ability.
+
+    B.6.6 Resource Symbols: Located to the left of the text box.
+        B.6.6.1 On older cards, these are located above the text box instead.
+        B.6.6.2 Some cards have an infinity symbol in place of one or more resource symbols. This symbol has special rules associated with it:
+            B.6.6.2.1 The infinity symbol is not a resource symbol.
+            B.6.6.2.2 The infinity symbol grants the card it is on all twelve resource symbols.
+                Note: Multiple instances of the infinity symbol are redundant (see J.5.2).
+
+    B.6.7 Control: The number inside the circle in the lower right corner of the card.
+        B.6.7.1 On older cards, there is a swirl symbol instead of a circle.
+
+    B.6.8 Universe: Located before the collector's information below the text box. This designates the license or property that the card falls under, and may be referenced by effects.
+        B.6.8.1 On older cards, the universe is designated by a logo located in the bottom left corner of a card.         
+        B.6.8.2 If two different printings of a card have different universes, all versions of the card are considered to have the most recent version's universe.
+
+    B.6.9 Watermark: Found in the lower left corner of the card.
+        B.6.9.1 On older cards, the watermark is part of the text box background for non-character cards, or above the vital statistics on character cards.
+        B.6.9.2 If two different printings of a card have different watermarks, all versions of the card are considered to have the most recent version's watermark.
+
+    B.6.10 Collector's Info and Legal Text: Located below the text box, after the universe.
+        B.6.10.1 This information has no impact on gameplay.
+
+    B.6.11 Card type: Located in the lower left corner of the art box (or below the card name on older cards) for non-character cards.
+        B.6.11.1 The card type of a character card is implied by its distinct card frame, and is considered a printed property of the card.
+
+
+
+C. Card States
+
+C.1 Ready and Committed
+    A card in the staging area or momentum can be either ready or committed. It is not possible to be in both states at once.
+    C.1.1 A ready card is designated by being in normal, portrait orientation.
+    C.1.2 A committed card is designated by being turned sideways 90 degrees, in landscape orientation.
+    C.1.3 To ready a card (as a verb) is to change it from being committed to being ready. Readied cards cannot be readied.
+    C.1.4 To commit a card (as a verb) is to change it from being ready to being committed. Committed cards cannot be committed.
+
+C.2 Public, Private and Unknown
+    A card may be either public, private or unknown. This defines which (if any) players may look at the face side of the card.
+    C.2.1 A public card may be looked at by either player at any time.
+        C.2.1.1 A face up or revealed card in any zone is public.
+        C.2.1.2 If an effect reveals private or unknown cards, those cards are temporarily public (see K.5.1).
+    C.2.2 A private card may only be looked at by the player controlling it.
+        C.2.2.1 Cards in a player's hand, and face down cards in the staging area, are private.
+        C.2.2.2 If an effect allows a player to look at unknown cards, those cards are temporarily private.
+    C.2.3 An unknown card may not be looked at by either player.
+        C.2.3.1 Face down cards in any zone other than the staging area are unknown.
+
+C.3 Valued and Valueless
+    A card may either be valued or valueless. This defines whether or not the card has properties that may be referenced in gameplay.
+    C.3.1 Any card that is either public, or in a public zone, is valued.
+    C.3.2 Any card that is not valued, is valueless.
+        C.3.2.1 Although the values and properties of a valueless card cannot be referenced in gameplay, they still have base properties through layer 2 as described below.
+
+    C.3.3 To determine the values and properties of a card, apply the pertinent values, properties and effects in the following order, or "layers":    
+        C.3.3.1 Layer 0 - The printed values and properties of the card.
+            Note: These are the values physically printed on the card. No effect can change a card's printed values.
+            Note: Face down cards do not have any printed values.        
+        
+        C.3.3.2 Layer 1 - Values and properties that are being set by a copying effect.(see J.3.4.1)
+            C.3.3.2.1 If a card has multiple effects that copy values from another card, the active player applies their effects in the order of their choosing, then the inactive player applies their effects in the other of their choosing.
+        
+        C.3.3.3 Layer 2 - Values and properties that are being set by a non-copying definition effect. (see J.3.4)
+            C.3.3.2.1 If a card has multiple non-copying definition effects being applied to it, the active player applies their effects in the order of their choosing, then the inactive player applies their effects in the other of their choosing.
+            C.3.3.2.2 The values and properties of a card as calculated through layer 2 are the card's "base values".
+                C.3.3.2.2.1 If the base attack zone of a card would be "null" or non-existent, it is mid instead.
+                    Note: If the base block zone of a card is null or non-existent, it stays as such and simply does not have a block.
+            C.3.3.2.3 As a special case, effects that grant or remove an ability that's playable from the hand, are applied in layer 2 for cards that are in the hand.
+                Note: Once a card becomes valued, these effects are applied to the current state as normal.
+
+        C.3.3.4 Layer 3 - Current State
+            Only valued cards have current states. The current state of a card is the "top" abstract layer, and contains the values and properties of a card as they are modified over time by various effects. Any modification to a card that does not apply in layers 0 through 2 will be applied to its current state.
+            C.3.3.4.1 A card gains a new current state upon becoming valued, or entering the transit zone in the course of being played, or at the corresponding point if played from the card pool.
+            C.3.3.4.2 This current state is maintained until it is refreshed (see C.3.3.4.4). The following events will cause a card's current state to be refreshed:
+                C.3.3.4.2.1 The turn ends
+                C.3.3.4.2.2 It changes game zones or publicity
+                C.3.3.4.2.3 In the case of an attack, it resolves or is aborted
+                C.3.3.4.2.4 In the case of a block, the attack it was played during resolves or is aborted.
+                Note: Upon attempting to play a card, even if it has an existing current state, that current state will still be replaced by a new one as per C.3.3.4.1. This is slightly differently than a refresh, notably with respect to C.3.3.4.4.2.
+            C.3.3.4.3 Once an effect has applied a modification to a card's current state, that modification cannot be re-applied, un-applied or otherwise changed until the current state is refreshed.
+            C.3.3.4.4 When a card's current state is created or refreshed, its initial properties and values are equal to the card's base values. Then apply all pertinent modifier effects (see J.3.3).
+                C.3.3.4.4.1 In the case of refreshing or replacing a current state, the reverting of the card to its base values does not create any game events.
+                C.3.3.4.4.2 In the case of a refresh, any effect that is re-applied to the refreshed current state, that had been applied to that card's current state prior to the refresh, will not create a game event.
+                    C.3.3.4.4.2.1 For such an effect that adds an ability to a card, that ability retains its history from before the refresh, including how many times it has been played if applicable.
+                C.3.3.4.4.3 The creation, refreshing, or replacement of a current state occurs before checking game events for fired effects.
+             C.3.3.4.5 If, while a card has a current state, the execution, application or expiration of some effect causes a change in the card's base values, update only the affected values or properties of the current state to be equal to that of the new base value.
+        
+    C.3.4 The speed, damage, and attack zone of an attack card cannot be modified unless the attack is currently in the process of being played, undergoing an attack sequence (see G. Attack Sequence), or is on the attack stack (see F.2.3).    
+
+
+
+D. Game Zones
+D.1 General
+    D.1.1 Each player has an instance of each of these game zones.
+    D.1.2 All cards enter game zones in the ready state by default.
+    D.1.3 As an exception to default behavior described below, if a face down card is moved from the staging area to the card pool or vice versa, it remains face down by default.
+    D.1.4 If a card would enter a zone of the player that does not own that card, add it to its owner's removed from game zone instead.
+
+D.2 Public Zones
+    Cards in these zones are face up, public cards by default.
+    D.2.1 Card Pool
+        Cards a player plays normally go into that player's card pool.
+        D.2.1.1 Cards are added to the card pool left to right.
+               Note: In practice, players may add cards to their card pool from right to left. However, for the purposes of these rules, it is assumed they are being added left to right. A player adding cards right to left must adjust pertinent rules accordingly.
+        D.2.1.2 The order of the cards in the card pool may not be changed.
+        D.2.1.3 Any reference to a singular "preceding" card in the card pool refers to the immediately preceding card only.
+    
+    D.2.2 Staging Area
+           A player's characters, foundations and assets reside in their staging area, as well as any cards attached to them.
+        D.2.2.1 Cards in a player's staging area may be arranged as that player wishes, however their presence, state (ready or committed), and any attached cards must be clear to both players.
+        
+        D.2.2.2 Face down cards in the staging area are foundations. Face down cards have no other base values by default.
+        
+        D.2.2.3 A card in the staging area may be attached to the starting character.
+            D.2.2.3.1 An attached card should be kept near or under the starting character, such that it is clear to both players that it is attached.
+            D.2.2.3.2 Attached cards have the same state (ready or committed) as the card they are attached to. They cannot be readied or committed independently, including committing to pass checks.
+            D.2.2.3.3 Attached cards cannot be used to pay costs unless a cost explicitly calls for an attached card. Abilities on attached cards cannot be played.
+            D.2.2.3.4 Whenever a character card with the same character name as a player's starting character is added to, or otherwise exists in, their staging area, attach it to the starting character.
+                D.2.2.3.4.1 A player's starting character gains all abilities and resource symbols on each different character attached to it.
+                    Note: This means that if multiple copies of an alternate version of a starting character are attached to it, the starting character only gets one set of those abilities.
+                D.2.2.3.4.2 Attached characters cannot be chosen for, or in any way impacted by, effects unless an effect explicitly refers to character cards in the staging area.
+                    Note: Attached non-character cards can be chosen for or impacted by effects as if they were any other card in the staging area.
+
+        D.2.2.4 A player's starting character cannot be destroyed, removed, flipped or leave the staging area for any reason.
+
+    D.2.3 Discard Pile
+            The discard pile contains cards that have been destroyed, checked or otherwise discarded.
+        D.2.3.1 The discard pile should be kept in a single face up pile.
+        D.2.3.2 The order of cards in the discard pile cannot be changed.
+        D.2.3.3 When a card is added to the discard pile, add it to the top of the pile.
+            D.2.3.3.1 If multiple cards are added to a player's discard pile at the same time, that player chooses what order to place them in.
+
+    D.2.4 Removed from Game
+        The removed from game zone holds cards that have been taken out of the current game due to mulligans, cycling, or some cost or effect.
+            Note: The removed from game zone is still a game zone. Effects that search all game zones may search the removed from game zone.
+
+    D.2.5 Transit zone
+        The transit zone is an abstract zone that temporarily stores cards that are in transit between zones.
+        D.2.5.1 Whenever a card moves from one zone to the other, it passes through the transit zone.
+            D.2.5.1.1 If the card is not in the process of being played, and was valued in its original zone, it retains its current state while in the transit zone. Its current state will refresh upon reaching its destination zone, if it is still valued in that zone.
+            D.2.5.1.2 If the card was private or unknown in its original zone, and is moving to a zone where it will be private or unknown, it remains private (if private in either the original or destination zone) or unknown (otherwise) while in the transit zone.
+            D.2.5.1.3 For the purposes of rules, effects and game events that reference a zone change, moving to and from the transit zone does not count as a zone change in and of itself. No zone change has occurred until the card reaches its destination zone.
+                Note: Entering the transit zone still qualifies as leaving the prior zone, and a card will be in the transit zone before entering its destination zone.    The above only refers to the complete process of a zone change.
+        D.2.5.2 If a card is being relocated within the same zone, it does not pass through the transit zone. No zone change, leaving of a zone, or adding to a zone occurs.
+            Note: This includes if a search effect covering multiple zones finds a card in a zone, and then attempts to move or add it to that same zone.
+
+
+D.3 Private Zones
+    Cards in these zones are held by the player, or set aside face down. They are private by default.
+    
+    D.3.1 Hand
+        The hand contains the cards a player has not played yet.
+        D.3.1.1 A player may have any number of cards in their hand.
+            D.3.1.1.1 Even if there are 0 cards in a player's hand, they still have a hand and may "discard their hand" (0 cards) to pay a cost.
+        D.3.1.2 Players may arrange their hands in any way they choose.
+        D.3.1.3 The number of cards in each player's hand is public knowledge.
+
+D.4 Unknown Zones
+    Cards in these zones are face down, unknown cards by default.    
+    
+    D.4.1 Deck
+        The player's deck contains the cards that they may draw or use for control checks over the course of a game.
+        D.4.1.1 The order of the cards in a player's deck cannot be changed.
+            D.4.1.1.1 If multiple cards are added to a player's deck at the same time, that player chooses what order to place them in.
+        D.4.1.2 The number of cards in each player's deck is public knowledge.
+
+    D.4.2 Momentum
+        A player's momentum is a set of cards kept next to their character.
+        D.4.2.1 The cards in a player's momentum must be arranged in a "bar", or some similarly ordered fashion.
+            D.4.2.1.1 They may not be distinguishable from each other in any way besides order of placement.
+        D.4.2.2 When a player adds a card to their momentum, they may add it at any spot in the order.
+        D.4.2.3 When a player discards or removes card(s) from their momentum, they may choose any card(s) they wish regardless of order.
+        D.4.2.4 Other than adding and removing cards, the order of momentum may not be changed.
+
+
+
+E. Gameplay Basics
+E.1  Starting the Game
+    Steps E.1.1 through E.1.8 take place before the game begins. No game events (aside from those described in E.1.6) occur during this time.    
+
+    E.1.1 Both players search their deck for a character card and place it face down in front of them. Then both players reveal their characters simultaneously. These will be the players' starting characters.
+    E.1.2 Players shuffle their decks until the cards are sufficiently randomized. They may shuffle or cut their opponent's deck as well.
+    E.1.3 Use an agreed-upon random method (such as rolling dice or flipping a coin) to decide which player chooses who gets the first turn ("going first").
+    E.1.4 Players add their starting characters to their staging areas. The player going first commits their character.
+    E.1.5 Players set their vitality (kept track of with pen and paper, or some other means) to their character's maximum vitality.
+    E.1.6 Any fired effects awaiting "Before the game begins" execute now.
+    E.1.7 Players draw a number of cards equal to their character's hand size.
+    E.1.8 Starting with the player going first, each player may choose to remove their hand from the game and draw cards equal to their character's hand size a second time. This is referred to as taking a mulligan.
+    E.1.9 The game begins. The player going first skips the Ready Phase of their first turn.
+
+E.2 Pause Conditions
+    If any of the following items are true, the game pauses until the described action is taken.
+     If multiple of the following items are true at the same time, address them in order.
+    Game events are suspended while processing these items, and occur as a single event afterwards.
+
+    E.2.1 A player at 0 or less vitality loses the game.
+    
+    E.2.2 A player with no cards remaining in their deck must cycle it. To cycle the deck, shuffle the discard pile, then remove the top 10 cards of this new deck from the game.                
+        E.2.2.1 If a player is unable to complete a cycle (they have no cards left in their deck and 10 or fewer cards in their discard pile), that player loses the game.
+    
+    E.2.3 Any character card in a player's staging area, or in their transit zone en route to their staging area, that does not have the same character name as their starting character, is discarded.    
+    
+    E.2.4 Any card with the [Character Name] Only keyword that is in a player's staging area, in their transit zone en route to their staging area, in their card pool, or in their transit zone en route to their card pool, is discarded unless that player's character name is [Character Name].
+    
+    E.2.5 If there is more than one card with the Terrain keyword in both staging areas combined, destroy the one that has been in a staging area while having the Terrain keyword for longer.
+        E.2.5.1 If the Terrains were added or otherwise existed in the staging areas for the same length of time, the active player chooses which one to destroy.    
+    
+    E.2.6 If there are two or more copies of a card with the Unique keyword in a player's staging area, that player destroys one of the copies.
+    
+    E.2.7 If there is an attack or action card in a player's staging area that is not attached to another card, discard it.
+
+E.3 Making a Control Check
+     The following describes the process of making a control check and determining its value and, if appropriate, its success or failure. In card text, "check" may be used as a shorthand for "Control Check"
+
+    E.3.1 Make a control check by discarding the top card of your deck. The control value of this card is the starting value of the control check.
+        E.3.1.1 This starting value is also the number you checked for the purposes of game events and effects.
+        E.3.1.2 Some effects may modify the value of the control check. These do not affect the starting value, only the final value.
+        E.3.1.3 If an effect sets a control check to a given number in advance, do not discard a card for E.3.1. Instead the starting value of the check is set to the number the effect dictates. The starting value may still be modified by other effects after that, and the game event of making a control check still occurs.
+
+    E.3.2 The final value of the control check is now set.
+
+    E.3.3 If an effect caused a re-check, begin the control check process again, starting from E.3.1.
+        E.3.3.1 Re-checks may not occur for control checks that are themselves re-checks.
+
+    E.3.4 If the control check was not being made against a difficulty, the process is now complete.
+
+    E.3.5 If the control check was being made against a difficulty:
+        E.3.5.1 If the final value is greater than or equal to the difficulty needed, the control check passes.
+        E.3.5.2 If the final value is less than the difficulty needed, decide whether or not they will commit cards to pass the control check.
+            E.3.5.2.1 You cannot choose to commit cards unless you are able to complete the steps in E.3.5.2.3.
+            E.3.5.2.2 If you decide not to commit cards, the control check fails.
+            E.3.5.2.3 If you decide to commit cards:
+                E.3.5.2.3.1 Determine the number of cards needed by subtracting the final value of the control check from the difficulty needed.
+                E.3.5.2.3.2 Commit character and/or foundation cards in your staging area only until you have committed at least that many cards. Committing these cards is a single game event.
+                    Note: "Only until" means that you may not commit additional cards if you have already met or exceeded (i.e. due to effects) the required number.
+    
+    E.3.6 The process is now complete.
+
+E.4 Playing a Card or Ability
+    The following describes the process of playing a card or an ability. If playing an ability on an action card in the hand, both the card and the chosen ability are played in one process.
+
+    E.4.1 Announce which card or ability you are going to play.
+        E.4.1.1 You may not attempt to play a card or ability that you cannot pay the costs for (excluding control checks).
+            Note: If the ability includes playing a card as a cost, you must be able to pay all non-check costs of the card you intend to play as well.
+        E.4.1.2 You may not attempt to play a card unless it has a resource symbol that is present on both your character and on every card in your card pool that has resource symbols.
+        E.4.1.3 If an effect disallows you from playing a card or ability, you may not initiate an attempt to play that card or ability.
+
+     E.4.2 If you are playing a card from a zone other than the card pool, add it to the transit zone. If you are playing a card from the card pool, move it to the right of all other cards.
+        E.4.2.1 If, after gaining a new current state (see C.3.3.4), the card no longer meets the requirements in E.4.1.2, discard it and abort this process.
+    
+    E.4.3 Starting at this time, all game events that would occur are suspended until E.4.5
+    
+    E.4.4 Pay all costs associated with the card or ability, excluding control checks. If you are unable to pay any such costs, you must still pay the remainder of them.
+        E.4.4.1 If playing an ability, pay the printed costs first, except for any cost that requires playing a card, in order as they are written.
+        E.4.4.2 Then pay any costs added by effects, in the order of your choosing.
+    
+    E.4.5 At this time, all game events that would have occurred during E.4.4 (but were suspended by E.4.3) occur now as a single event.
+        E.4.5.1 Then, if one of the costs in E.4.4 could not be paid, discard the card (if a card is being played) and abort this process.
+
+    E.4.6 If attempting to play an ability whose cost includes playing a card, attempt to play that card.
+        E.4.6.1 If the attempt to play that card fails or is aborted, discard it and abort the process of trying to play the ability.
+    
+    E.4.7 If you are attempting to play a card, determine the total difficulty.
+        E.4.7.1 If you are not playing the card as a block, start with the difficulty of the card. Otherwise, start with the value given in G.2.1.3.2.1.
+        E.4.7.2 Then, add 1 for each card in your card pool, excluding the card being played if it is being played from the card pool. The result is the total difficulty.
+            E.4.7.2.1 The addition of 1 for each card in the card pool is called "progressive difficulty".
+            E.4.7.2.2 If the card being played has an effect causing it to "ignore progressive difficulty", skip E.4.7.2.
+            E.4.7.2.3 If a card in the card pool "does not count towards progressive difficulty", it is not counted in E.4.7.2.
+    
+    E.4.8 If you are attempting to play a card, make a control check against the total difficulty.
+        E.4.8.2 If the control check fails, discard the card and abort this process.
+
+    E.4.9 If the card or ability has any other control check costs associated with it, make control check(s) against the difficulty value(s) required.
+        E.4.9.1 If playing an ability, start with any control check costs among its printed costs, in order as they are written on the card.
+        E.4.9.2 Then make the control checks for any other control check costs added by effects, in the order of your choosing.
+        E.4.9.3 If any of these control checks fail, discard the card (if a card is being played) and abort this process.
+
+     E.4.10 If you are attempting to play a card, add it to (or move it within) your card pool to the right of all other cards.
+
+    E.4.11 The card or ability has now been played successfully. If playing a card that is not being played as an attack, that card has also resolved.
+        E.4.11.1 If this process was aborted as per E.4.2.1, E.4.7.1 or E.4.8.3, the attempt to play the card or ability has failed.
+
+
+F. Turn Sequence
+    The following describes the phases and steps that comprise a turn. Players must follow these in order on each of their turns. The player whose turn it is is the "active player". The other player is the "inactive player".
+
+F.1 Ready Phase
+    The Ready Phase is composed of the Ready Step, Review Step and Draw Step. These are done in order.
+
+    F.1.1 Ready Step - The active player readies all of their committed cards. This is not optional.
+    
+    F.1.2 Review Step - The active player may choose to discard 1 card from their hand. This is called "reviewing" a card.
+    
+    F.1.3 Draw Step - The active player draws cards until they have a number of cards in their hand greater than or equal to their hand size. This is not optional.
+        Note: If a player already has enough cards in their hand at the start of their Draw Step, they will not draw any cards.
+        F.1.3.1 The drawing of these cards occurs as a single game event.
+
+F.2 Combat Phase
+    F.2.1 During the Combat Phase, the active player takes a series of acts known as forms. A form may only be played if all of these things are true:
+        F.2.1.1 There are no cards or abilities in the process of being played or executing.
+        F.2.1.2 There are no response windows open. (see H.2.3.2)
+        F.2.1.3 The game is not in an attack sequence. (see G. Attack Sequence)
+        F.2.1.4 There are no pending attacks. (see F.2.3)    
+
+    F.2.2 The following acts are forms:
+        F.2.2.1 Attempt to play any non-action card, or a form ability on an action card, from the hand.
+            F.2.2.1.1 If a player attempts to play a card as a form (including a form ability on an action card), and that attempt fails, their Combat Phase ends and the game proceeds to the End Phase.
+        F.2.2.2 Attempt to play a form ability.
+        F.2.2.3 Pass on any further forms, and proceed to the End Phase.
+            F.2.2.3 If a player passes without attempting to play a card from their hand as a form, they must attempt to play at least one card from their hand as a form during their next turn's Combat Phase.
+
+    F.2.3 Whenever an attack is played, but not as a cost, it is added to an abstract list called the "attack stack".
+        Note: This is not a game zone. It has no impact on play other than keeping track of which attacks occur in which order should there be multiple attacks pending at once.
+        F.2.3.1 There is only one attack stack, shared by both players.
+        F.2.3.2 A card cannot be added to the attack stack unless it is an attack in the card pool.
+        F.2.3.3 Attacks on the attack stack are called "pending attacks".
+        F.2.3.4 Whenever a form could otherwise be played, (F.2.1.1 through F.2.1.3 are all true) enter an attack sequence for the pending attack most recently added to the attack stack, and remove it from the stack.
+        F.2.3.5 If a pending attack leaves the card pool or gets turned face down, remove it from the attack stack.
+        F.2.3.6 If more than one attack is to be added to the attack stack at the same time, add them starting with the rightmost attack in the card pool and moving left.
+            Note: This means that when that group of attacks begin to initiate attack sequences, they will occur in order from left to right, since the leftmost attack was added last.                    
+
+F.3 End Phase
+    F.3.1 During the End Phase, players "clear" their card pools, moving all cards in them to other zones as described below.
+        F.3.1.1 The active player clears their card pool first, then the inactive player.
+        F.3.1.2 Cards are cleared from the card pool in right to left order.
+        F.3.1.3 If an assigned fired effect on a card in the card pool awaits the event "During the End Phase," it executes before that card would normally be cleared from the card pool during the current turn's End Phase.
+    
+
+    F.3.2 When clearing a card from the card pool:
+        F.3.2.1 Any foundation, asset, or character that was played this turn is added to the player's staging area.
+            Note: This does not include cards of these types that were played as blocks.(see G.2.1.3.3.1)
+        F.3.2.2 Any attack that dealt damage may be added to the player's momentum, or discarded, at the player's choosing.
+        F.3.2.3 All cards that do not match F.3.2.1 or F.3.2.2 are discarded.
+
+    F.3.3 After both card pools have been cleared, the active player's turn ends and the other player begins their turn.
+
+F.4 Additional Rules
+    F.4.1 Phases, steps and turns cannot begin or end while there are effects being executed or a response window is open.
+        F.4.1.1 This includes the steps of an attack sequence. (see G. Attack Sequence)
+        F.4.1.2 If an instruction forces a phase or step to end, that phase or step ends as soon as the above conditions are met.
+
+    F.4.2 It is possible for abilities to be played or effects or game events to occur in between phases or steps, but not in between turns.
+
+
+G. Attack Sequence
+    The following describes the steps that occur during an attack sequence. The player whose attack it is will be referred to as the "attacker", and their opponent is the "defender".
+
+G.1 Enhance Step
+    G.1.1 Starting with the attacker, players alternate having priority to play an enhance ability. (see H.2.1)
+    
+    G.1.2 When a player has priority, they may choose to either play an enhance ability or pass.
+        Note: A player may play an enhance ability even if they passed when having priority previously.
+        Note: If a player cannot play any enhance abilities, they must pass.
+    
+    G.1.3 When both players pass in succession, the Enhance Step ends.
+    
+G.2 Block Step
+    G.2.1 The defender decides whether or not to attempt to block the attack.
+        G.2.1.1 They cannot choose to attempt to block if they do not have a card that meets the conditions in G.2.1.3.1.
+            G.2.1.1.1 If an effect bars the defender from blocking an attack with certain zone(s), (including effects that prevent partial or complete blocking) they cannot choose to attempt to block with a card with one of the affected block zones.
+            G.2.1.1.2 If the attack is "unblockable" due to some effect, the defender cannot attempt to block at all. Its block status becomes "not blocked" in G.2.2, regardless of any effect that would cause it to be blocked.
+
+        G.2.1.2 If they decide not to attempt to block, or an effect causes the attack to be blocked, proceed to G.2.2.
+        
+        G.2.1.3 If they decide to attempt to block, follow these steps:
+            G.2.1.3.1 The defender must choose a card in their hand that meets the following conditions:
+                G.2.1.3.1.1 If the attack's zone is low, the card must have a block zone of low or mid.
+                G.2.1.3.1.2 If the attack's zone is high, the card must have a block zone of high or mid.
+                G.2.1.3.1.3 If the attack's zone is mid, the card must have a block of any zone.
+                G.2.1.3.1.4 The card must be able to be legally played as per E.4.1.1 and E.4.1.2.
+            G.2.1.3.2 The defender now begins their attempt to block with the chosen card.
+                G.2.1.3.2.1 Determine the base difficulty of the block. This is equal to the block modifier of the chosen card, plus the speed of the attack.
+                G.2.1.3.2.2 The defender attempts to play the chosen card.        
+                    
+    G.2.2 Determine the block status of the attack.
+        G.2.2.1 If the defender did not attempt to play a block, their attempt failed, or the block was cancelled, the attack is not blocked.
+        G.2.2.2 If the defender played a block, and its block zone is the same as the attack zone of the attack, the attack is completely blocked.
+        G.2.2.3 If the defender played a block, and its block zone is not the same as the attack zone of the attack, the attack is partially blocked.
+
+G.3 Damage Step
+    During this step, the attack may deal damage once to the defender. When a player is dealt damage, they lose that much vitality.
+
+    G.3.1 If the attack was completely blocked, or its damage is zero or less, it deals no damage.
+        Note: It is not possible to "deal 0 damage." An attack that deals no damage did not deal damage.
+     G.3.2 If the attack was partially blocked, it deals an amount of damage equal to half its damage, rounded up.
+    G.3.3 If the attack was not blocked, it deals damage equal to its damage.
+
+G.4 Attack Resolution
+    The attack has resolved and its attack sequence ends.
+
+G.5 Additional Rules    
+    G.5.1 Entering an attack sequence does not cause the game to leave the current part of the turn sequence it is in. If an attack sequence begins during the Combat Phase, the game is still in the Combat Phase throughout the attack sequence.
+    
+    G.5.2 If an attack leaves the card pool or gets turned face down during its attack sequence, but before the Damage Step, it becomes a dropped attack.
+        G.5.2.1 If an attack is dropped, the attack sequence is aborted the next time either of these things occur:
+            G.5.2.1.1 A player would receive priority to play an enhance.
+            G.5.2.1.2 The attack sequence would move to move to G.2, G.2.2, or G.3. (The start of the block step, before block status is determined, and the start of the damage step, respectively)
+        Note: If an attack leaves the card pool, or is turned face down, after the Damage Step begins, complete the attack sequence as normal.
+
+
+
+H. Abilities
+    An ability is lines of text either printed in a card's text box, or granted to a card by a keyword or effect. Abilities may be either played abilities, or continuous abilities.
+
+H.1 Played Abilities – Construction
+    A played ability has several parts. For rules on how to play a played ability, see E.4.
+    H.1.1 (Optional) A bold-faced restriction term.
+    H.1.2 (Required) A single bold-faced letter (E, F or R) designating what type of played ability it is.
+    H.1.3 (Optional) Bracketed text describing additional restrictions.
+    H.1.4 (Optional) A series of instructions that constitutes the cost to play the ability.
+    H.1.5 (Required) A colon.
+    H.1.6 (Optional) A phrase describing a point in time, ending in a comma. This is a response condition.
+        H.1.6.1 Response conditions only appear in, and are a required part of, response (R) abilities.
+    H.1.7 (Required) A series of instructions that constitute the immediate effect of the ability.
+
+H.2 Played Abilities - Types    
+    H.2.1 Enhance abilities
+        H.2.1.1 An ability with an "E" as its type designator is an enhance ability.
+        H.2.1.2 Enhance abilities are played during the Enhance Step. See G.1.
+        H.2.1.3 An enhance ability may only be played if it is on a ready foundation, asset or starting character in the staging area, an action card in the hand, or on the current attack.
+        H.2.1.4 Each enhance ability may only be played once per Enhance Step.
+    
+    H.2.2 Form abilities
+        H.2.2.1 An ability with an "F" as its type designator is a form ability.
+        H.2.2.2 Form abilities are played during the Combat Phase. See F.2.2.
+        H.2.2.3 A form ability may only be played if it is on a ready foundation, asset or starting character in the staging area, or on an action card in the hand.
+    
+    H.2.3 Response abilities
+        H.2.3.1 An ability with an "R" as its type designator is a response ability.        
+        H.2.3.2 Response abilities are played during a response window.
+            H.2.3.2.1 A response window may be opened by either player at any time a game event occurs.
+            H.2.3.2.2 If a response window is opened during the middle of an effect's execution, that execution is halted until the window closes.
+            H.2.3.2.3 If a response window is opened during another response window, or the Enhance Step, the handling of that window or step is paused until this new response window closes.
+            H.2.3.2.4 Once a response window is opened:
+                H.2.3.2.4.1 Starting with the active player, players alternate having priority to play a response ability.
+                H.2.3.2.4.2 When a player has priority, they may either play a valid response ability or pass.
+                    H.2.3.2.4.2.1 A valid response ability is one whose response condition (see H.1.6) matches the game event that the response window was opened in reaction to.
+                        Note: One game event may match several different response conditions.                        
+                H.2.3.2.4.3 When both players pass in succession, the response window closes.
+            H.2.3.2.5 Once a response window is opened, it exists independent of other occurrences. The properties of the game event it was opened in reaction to cannot be changed, and the window cannot be closed until both players have passed priority.
+        H.2.3.3 A response ability may only be played if it is on a ready foundation, asset or starting character in the staging area, an action card in the hand, or on the current attack during an attack sequence; or, if the ability's response condition references the card it is on.
+        H.2.3.4 Each response ability may only be played once per response window.
+
+
+H.3 Played Abilities – Restrictions
+    Played abilities may have a number of restrictions on when and if they can be played.
+    
+    H.3.1 Some restrictions appear in bold-faced text or as symbols preceding the type designation. These are:
+        H.3.1.1 "First" - The ability must be the first action of its type attempted during the pertinent time frame.
+            H.3.1.1.1 For forms, a First F may only be played if the player has not attempted to play any other forms (including playing cards as forms) during the current Combat Phase.
+            H.3.1.1.2 For enhances, a First E may only be played if the player has not attempted to play any other enhance abilities during the current Enhance Step.
+                Note: A player may pass any number of times and still play a First E, provided it is still the first enhance ability they play.
+        H.3.1.2 "Combo" - The ability may not be played unless the conditions laid out in the card's Combo keyword ability are met. (see I.3.3)
+            H.3.1.2.1 - Playing one of these abilities classifies as playing a combo ability.
+            H.3.1.2.2 - All references to combo abilities refer to combo-restricted abilities.
+            Note: If a card does not have the combo keyword ability, played abilities with the combo restriction cannot be played.
+        H.3.1.3 "Deadlock" - The ability may only be played if the opponent has more than 10 foundations in their staging area.
+            H.3.1.3.1 - Playing one of these abilities classifies as playing a deadlock ability.
+        H.3.1.4 "Desperation" - The ability may only be played if the player is at less than half of their character's maximum vitality.
+            H.3.1.4.1 - Playing one of these abilities classifies as playing a desperation ability.
+            H.3.1.4.2 - Any reference to a desperation ability that is not related to playing one, refers to the Desperation keyword ability.
+        H.3.1.5 Character's Name - The ability may only be played if the player's starting character has that character name.
+            H.3.1.5.1 - These abilities are classified as character-specific abilities.
+        H.3.1.6 Resource Symbol - The ability may only be played if the player's starting character has that resource symbol.
+            H.3.1.6.1 - These abilities are classified as resource-only abilities.
+        H.3.1.7 Watermark - The ability may only be played if the player's starting character has that watermark.
+
+    H.3.2 Some restrictions appear in brackets after the type designation, but before the cost.
+        H.3.2.1 If the brackets contain the name of a game zone, the ability can only be played while the card is in that game zone.
+            H.3.2.1.1 This also allows the ability to be played while the card is in that game zone, even if it normally could not be.
+        H.3.2.2 Other than game zones, the brackets could contain:
+            H.3.2.2.1 "Once per turn" - The ability may only be played once per turn.
+            H.3.2.2.2 "Twice per turn" - The ability may only be played twice per turn.
+            H.3.2.2.3 "Your turn" - The ability may only be played during the player's turn.
+            H.3.2.2.4 "Your attack" - The ability may only be played during an attack sequence for one of the player's attacks.
+            H.3.2.2.5 "Opponent's turn" - The ability may only be played during the player's opponent's turn.
+            H.3.2.2.6 "Opponent's attack" - The ability may only be played during an attack sequence for one of the player's opponent's attacks.
+            H.3.2.2.7 "Enhance Step" - The ability may only be played during the Enhance Step.
+            H.3.2.2.8 "Once per Enhance Step" - The ability may only be played once during a given Enhance Step.
+
+    H.3.3 In some cases, a restriction may appear at the end of a played ability's effect text. This text is not part of the effect. These restrictions can take one of two forms:
+        H.3.3.1 "Only playable (condition)" - The ability may only be played if the condition is met.
+        H.3.3.2 "Playable while committed" - The ability can be played even if the card it is on is committed (see H.5.1).
+        H.3.3.3 "Playable by either player" - Both players may play this ability as if it were on one of their cards.
+            Note: The owner of the ability / effect is the player who played it.
+            Note: In the case of an enhance or response ability, this does not allow both players to play the ability in the same Enhance Step or response window. Once one player has played it, it may no longer be played by either player during that time frame.
+        H.3.3.4 "Your opponent may (instructions) to cancel this ability" - After the ability is played, the opponent can choose to complete the specified instructions.If they do, the ability is cancelled.
+            H.3.3.4.1 A variant of this reads "Your opponent may (instructions) to cancel this ability and destroy this card". In this case, if the opponent completes the instructions, the card is also destroyed.
+            H.3.3.4.2 Completing these instructions is treated as a cost, not an effect.
+            H.3.3.4.3 This decision is made after any fired effects are executed (see J.3.2) but before a response window may be opened in reaction to the ability being played.
+            H.3.3.4.4 The cancellation (and possibly destruction) resulting from this is neither a cost nor an effect.
+
+H.4 Played Abilities – Costs
+    H.4.1 Certain shorthand terms may appear in an ability's cost. These stand for:
+        H.4.1.1 "Commit" - "Commit this card"
+        H.4.1.2 "Destroy" - "Destroy this card"
+        H.4.1.3 "Remove" - "Remove this card from the game"
+        H.4.1.4 "Flip" - "Turn this card face down"
+    
+    H.4.2 If a cost includes parentheses containing a number with a plus sign, this is a control check cost. A check must be passed against a difficulty equal to the number in the parentheses as part of the cost of playing the ability. (see E.4.9)    
+        H.4.2.1 If any cards are committed to pass a control check cost, those cards count as having been committed as part of a cost.
+    
+    H.4.3 If a cost includes committing a number of foundations, the player paying that cost may commit their starting character in place of one foundation.
+    
+    H.4.4 If there is an X in a played ability's cost, either:
+        H.4.4.1 The value of X will be defined at the end of the effect text of the ability. In such a case, this definition is not part of the effect.
+        H.4.4.2 If the above is not true, the player whose ability is it chooses any non-negative value for X when the ability is announced.
+    
+    Note: See K. Instruction Glossary for additional rules that may apply to costs.
+
+H.5 Played Abilities – General
+    H.5.1 Played abilities on committed cards cannot be played.
+    H.5.2 If a played ability with a control check cost can only be played a limited number of times, due to a play restriction and/or due to being an enhance or response ability (usable once per enhance/response step), those limitations limit the number of times the ability may be attempted, not played.
+    H.5.3 If a card changes zones, the count of how many times its abilities have been attempted and/or played is reset.
+    H.5.4 If an effect instructs a player to play an ability, they play that ability immediately, ignoring timing rules associated with the ability type (form, enhance or response), if the ability can otherwise validly be played.
+            
+H.6 Continuous Abilities
+    An ability that is not played (it lacks the required elements in H.1) is a continuous ability. A continuous ability provides a static effect to the card it is on. (see J.2.1)
+
+
+
+I. Keywords
+    Keywords are terms that appear bolded or italicized at the top of a card's text box. Any card with a keyword on it is classified as a [name] card, where [name] is the name of that keyword. There are two types of keywords - keyword traits, and keywords that grant abilities.
+
+I.1 Keyword Traits
+    A keyword trait has no function other than to serve as an additional way to classify the card it is on. The following keywords are keyword traits:
+    I.1.1 Ally
+    I.1.2 Charge
+    I.1.3 Fury
+    I.1.4 Kick
+    I.1.5 Punch
+    I.1.6 Ranged
+    I.1.7 Slam
+    I.1.8 Taunt
+    I.1.9 Tech
+    I.1.10 Weapon
+
+I.2 Keyword Abilities – General
+    I.2.1 The following keywords grant a linked ability to the card they are on. See I.3 for the text of these abilities and other rules associated with them.
+        I.2.1.1 Breaker
+        I.2.1.2 [Character Name] Only
+        I.2.1.3 Combo
+        I.2.1.4 Desperation
+        I.2.1.5 EX
+        I.2.1.6 Flash
+        I.2.1.7 Gauge
+        I.2.1.8 Multiple
+        I.2.1.9 Powerful
+        I.2.1.10 Reversal
+        I.2.1.11 Safe
+        I.2.1.12 Stun
+        I.2.1.13 Terrain
+        I.2.1.14 Throw
+        I.2.1.15 Unique
+
+    I.2.2 The ability granted by one of the keywords in I.2.1 is a keyword ability. It is classified as a [name] ability, where [name] is the name of the keyword granting it.
+    
+    I.2.3 A keyword ability is linked to the keyword that grants it. This means:
+        I.2.3.1 If the keyword is removed, the linked keyword ability is removed as well.
+        I.2.3.2 If a keyword ability is removed, the linked keyword is removed as well.
+        I.2.3.3 If an effect copies both the keywords and abilities of a card, keyword + linked ability pairs are still linked after being copied.
+                
+    I.2.4 Some of the keywords in I.2.1 will be succeeded by a colon with a number after it. This number is the rating of that keyword, and can be referenced by the linked ability.
+        I.2.4.1 If an effect modifies the [name] rating of a card, where [name] is the name of a keyword, and the card has multiple instances of that keyword, the player whose card it is chooses one of the instances to receive the modification.
+        I.2.4.2 If an effect copies a keyword with a rating, that rating is copied as well.
+        
+    I.2.5 If a keyword is preceded by a play restriction, the ability it grants has that play restriction.
+        
+
+I.3 Keyword Abilities – Text
+
+    I.3.1 Breaker
+        I.3.1.1 Breaker grants the ability "R: After you block with this card, the next card your opponent attempts to play this turn gets +X difficulty. X equals the rating of the Breaker keyword granting this ability."
+        Note: This ability increases the difficulty of the card being played. That value may not factor into the difficulty of the check they must pass, i.e. in the case of blocking.
+    I.3.2 [Character Name] Only
+        I.3.2.1 [Character Name] Only grants the ability "This card cannot be played unless your character name is [Character Name]."
+                  Note: [Character Name] Only cards also have a pause condition (see E.2.4) associated with them that prevent them from being in the card pool or staging area if the player is not using the named character.
+    I.3.3 Combo
+        I.3.3.1 The Combo keyword is always succeeded by "(requirement(s))", which are referenced by the linked ability.
+        I.3.3.2 Combo grants the ability "Played abilities on this card that have a combo restriction may not be played unless the printed values of the card(s) immediately preceding this card in the card pool match the requirement(s) listed after at least one Combo keyword on this card, in order if applicable."
+        Note: Because combo only checks the preceding cards' printed values, changing those values via effects will not change whether a combo-restricted ability can be played or not.
+
+    I.3.4 Desperation
+        I.3.4.1 Desperation grants the ability "While you are at less than half of your starting character's maximum vitality, this card's difficulty is X. X equals the rating of the Desperation keyword granting this ability."
+        Note: This is a definition effect. (see J.3.4)
+
+    I.3.5 EX
+        I.3.5.1 EX grants the ability "E Discard 1 or more momentum: This attack gets +X speed for each card used to pay the cost of this ability. X equals the rating of the EX keyword granting this ability."
+    
+    I.3.6 Flash
+        I.3.6.1 Flash grants the ability "Skip this attack's Enhance Step."
+        Note: If an attack gains the Flash keyword after its Enhance Step has begun, this ability does not cause the Enhance Step to end. (see J.5.3)
+
+    I.3.7 Gauge
+        I.3.7.1 Gauge grants the ability "E: If this attack deals X or more damage, search your deck and discard pile for a character card that shares a name with your starting character and add it to your staging area. X equals the rating of the Gauge keyword granting this ability."
+
+    I.3.8 Multiple
+        I.3.8.1 Multiple grants the ability "E Discard X momentum (minimum 1, maximum the Multiple rating): Add X cards from the top of your discard pile to your card pool face down as multiple copies of this attack. Add those attacks to the attack stack."
+        I.3.8.2 A multiple copy of an attack copies all printed values of the original attack, except for the text box. Multiple copies do not copy traits or abilities.
+                  Note: This is a copying definition effect. (see C.3.3.2)
+            I.3.8.2.1 If a multiple copy would be added to a player's momentum, discard it instead.
+            I.3.8.2.2 If a multiple copy would be created of a multiple copy, discard it instead.
+        I.3.8.3 A detached effect that applies a modification or otherwise affects "multiple copies of this attack" is treated as an assigned effect to the current attack.
+            Note: This means that the effect's instructions do not fail if it is created before any multiple copies exist. The multiple copies will receive any modification or other impact as soon as they are added to the attack stack.
+
+    I.3.9 Powerful
+        I.3.9.1 Powerful grants the ability "E Discard 1 or more momentum: This attack gets +X damage for each card used to pay the cost of this ability. X equals the rating of the Powerful keyword granting this ability."
+    
+    I.3.10 Reversal
+        I.3.10.1 Reversal grants the ability "R [Hand] Play this card as a reversal: After your opponent's blocked attack resolves, add this attack to the attack stack."
+        I.3.10.2 To play a card "as a reversal" is a classification given to cards played to pay the cost of a reversal ability, as well as some other effects.
+            I.3.10.2.1 Cards played as a reversal are played as a reversal "to" some opponent's attack. If not otherwise specified, the card is played as a reversal to the opponent's current attack, or their most recently resolved attack if there is no current attack.
+            I.3.10.2.2 If a player has already attempted to play a card as a reversal to an attack, they cannot attempt to play a second card as a reversal to that same attack.
+            I.3.10.2.3 A card may not be played as a reversal to an attack that had the Safe keyword ability when it resolved.
+        I.3.10.3 If a reversal ability is cancelled, refresh the current state of the card played as part of the cost.
+
+    I.3.11 Safe
+        I.3.11.1 Safe grants the ability "Attacks cannot be played as a reversal to this attack."
+
+    I.3.12 Stun
+        I.3.12.1 Stun grants the ability "E: Your opponent commits X foundations. X equals the rating of the Stun keyword granting this ability."
+
+    I.3.13 Terrain
+        I.3.13.1 Terrain grants the ability "After this card is added to your staging area, destroy all other terrain cards."
+            Note: This ability is redundant with E.2.5. It is impossible for there to be any other terrain cards to destroy, but because it has a gameplay impact, Terrain is defined as an ability-granting keyword.
+
+    I.3.14 Throw
+        I.3.14.1 Throw grants the ability "If this attack is completely blocked, it deals half damage (rounded up) during the Damage Step."
+
+    I.3.15 Unique
+        I.3.15.1 Unique grants the ability "After this card is added to your staging area, if there are 2 or more copies of it in your staging area, destroy 1 of them."
+            Note: This ability is redundant with E.2.6. It is impossible for the "if" condition to be true, but because it has a gameplay impact, Unique is defined as an ability-granting keyword.
+
+
+
+J. Effects
+    An effect is a series of instructions that have some impact on the game.
+
+J.1 Effects – General
+    J.1.1 When executing an effect, even if some parts of the effect are not possible, it still does as much as it can.Note: It is possible for an effect to be unable to do anything at all. This is not a restricting factor - it is legal to play an ability even if none of the instructions in its effect will be applicable and/or possible.
+        Note: It is possible for an effect to be unable to do anything at all. This is not a restricting factor - it is legal to play an ability even if none of the instructions in its effect will be applicable and/or possible.
+        J.1.2 If an effect is able to do either more or less than a numerical instruction, but not exactly as instructed, it does as much as it can without going over the amount instructed.
+        
+    J.1.2 The instructions of an effect are executed in order, creating separate individual game events. This includes series of modifications, (i.e. "This attack gets +2 speed and +2 damage" is two steps and two events) but does not split up groups of cards (i.e. "Discard 2 cards" is one step and one event).
+        Note: Certain replacement effects are handled out of order(see J.3.5.1.1).
+    
+    J.1.3 The execution of an effect may be interrupted or paused by a pause condition (see E.2), a fired effect (see J.3.2), or the opening of a response window (see H.2.3.2.2)    
+    
+    J.1.4 Any decisions that are made as part of an effect, are made as they are reached during that effect's execution.
+        J.1.4.1 If an option is presented of the form "you may (instructions) to (additional effect)", completing those instructions is treated as a cost, not an effect.
+    
+    J.1.5 The controller of an effect:
+        J.1.5.1 The controller of a static effect is the controller of the card with the associated continuous ability.
+        J.1.5.2 The controller of an immediate effect is the player who played the associated ability.
+        J.1.5.3 When an effect creates another effect, the new effect's controller is the controller of the effect that created it.
+
+J.2 Effect States
+    Effects can have one of three states, which define when that effect is active, and/or when it ends.
+
+    J.2.1 A static effect is the effect of a continuous ability on a card.
+        J.2.1.1 A static effect is active whenever the card it is on has a current state, and has the ability creating the effect.
+        J.2.1.2 A static effect of a continuous ability on a character card is not active unless that card is a player's starting character.
+
+    J.2.2 A detached effect is an effect created by a played ability or some other effect, and is independent of the state of any particular card(s).
+        J.2.2.1 A detached effect ends when either its execution completes, a point specified in the effect is reached, the turn ends (if no other end point is specified), or in the case of a fired effect (see J.3.2) all possible opportunities for its firing event to occur have passed.
+    
+    J.2.3 An assigned effect is an effect created by a played ability or some other effect, and is specific to and dependent on the state of some chosen card.
+        J.2.3.1 An assigned effect ends when either its execution completes, a point specified in the effect is reached, the turn ends (if no other end point is specified), or the chosen card changes game zones.
+
+    J.2.4 Effects may specify additional conditions that limit their activity.
+
+    J.2.5 When an effect ends, this process occurs before checking game events for fired effects.
+
+J.3 Effect Classes
+    Effects can be of one of five classes, which define how the effect is executed or otherwise applied to the game.
+    
+    J.3.1 An immediate effect is the effect of a played ability.
+        J.3.1.1 An immediate effect executes after the ability is successfully played.
+        J.3.1.2 An immediate effect is always detached.
+        J.3.1.3 The scope of an immediate effect of a form or enhance ability begins when the associated ability is announced.
+        J.3.1.4 The scope of an immediate effect of a response ability begins with, and includes, the game event that the ability was played in reaction to.
+        J.3.1.5 Immediate effects can create other effects, which could be of any state or class.
+
+    J.3.2 A fired effect is an effect that waits for a particular game event.
+        J.3.2.1 A fired effect is executed after the specified game event occurs.
+            J.3.2.1.1 Fired effects execute before a response window may be opened.
+            J.3.2.1.2 If multiple fired effects are to be executed due to the same game event, the active player executes their fired effects in the order of their choosing, then the inactive player executes theirs in the order of their choosing.
+            J.3.2.1.3 An effect that modifies a future control check is a fired effect that waits for that control check to be made (see E.3.1.2).
+        J.3.2.2 The default scope of a fired effect begins with, and includes, the game event that causes it to execute.
+        J.3.2.3 A fired effect may execute once, or multiple times. In the latter case, a detached or assigned fired effect will specify a point at which it ends.            
+        J.3.2.4 Fired effects can create other effects, which could be of any state or class.
+        J.3.2.5 If a static fired effect on a card would execute due to a game event in which the card changed zones or left a zone, if the card was valued in its original zone, and did not have the continuous ability granting that static fired effect in its original zone, the effect does not execute.
+
+    J.3.3 A modifier effect applies some modification to the current state of one or more cards, typically card(s) that fulfill some given requirement(s).
+        J.3.3.1 Modifier effects apply their modifications as soon as a card is valued and meets the requirement(s) if any. This occurs before executing any fired effects awaiting any game event that caused the card to become valued and/or meet the requirements.
+            J.3.3.1.1 If there are multiple modifier effects to apply, the active player applies theirs in the order of their choosing, then the inactive player applies theirs in the order of their choosing.
+        J.3.3.2 A modifier effect may execute once, or multiple times. In the latter case, a detached or assigned modifier effect will specify a point at which it ends.
+            Note: Modifier effects cannot apply the same modification to a card multiple times (see C.3.3.4.3).
+        J.3.3.3 Modifier effects cannot create other effects, though they may grant abilities that do so.
+
+    J.3.4 A definition effect sets a card's value(s) and properties to some specified number or text.
+        J.3.4.1 A copying effect is a subclass of definition effects sets a card's values to be the same as the printed values of some other card.
+        J.3.4.2 If a card has multiple copying effects, or multiple non-copying definition effects, applied to it, the active player applies theirs in the order of their choosing, then the inactive player applies theirs in the order of their choosing.
+            Note: Copying definition effects are handled in layer 1 of a card's value calculations, while other definition effects are handled in layer 2 (see C.3.3). So, if there are both copying and non-copying definition effects applied to a card, the copying ones will always be applied first.    
+        J.3.4.3 Definition effects cannot create other effects, though they may set abilities that do so.
+
+    J.3.5 A rule effect applies an additional rule to the game while it is active.
+        J.3.5.1 A replacement effect is a subclass of rule effects that changes one act into another. Replacement effects include the word "instead", and may replace one instance of an event, or several of them over some specified timespan.
+            J.3.5.1.1  An ability's immediate effect may contain a replacement effect that conditionally and/or optionally changes the preceding part of that immediate effect. Handle such a replacement effect immediately before the instruction it affects.
+        J.3.5.2 If applicable, the handling of a rule effect occurs before any other effects are applied or executed.
+            J.3.5.2.1 If there are multiple rule effects that need to be handled at the same time, the active player handles theirs in the order of their choosing, then the inactive player handles theirs in the order of their choosing.
+        J.3.5.3 Rule effects cannot create other effects.
+            Note: In particular, if a rule effect impacts a collection of cards, it does not create individual assigned effects on those cards. If that rule effect ends, the cards in question are no longer impacted by its added rule.
+    
+
+J.4 Referencing Values
+    J.4.1 Some effects will have a time frame, called its scope, which defines how far back in the game to look for a card's property or value when that effect calls for it.
+        J.4.1.1 If an effect that has a scope creates another effect, that new effect's scope begins at the same time as that of the effect that created it. This supercedes the default scopes laid out in J.3.
+
+    J.4.2 When an effect references a card value:
+        J.4.2.1 If an effect references a printed value from a card that does not have that value printed on it, use zero if it is a numerical value, and treat it as a "null" otherwise.
+            Note: A "null" value may cause an effect instruction to be non-executable.
+        J.4.2.2 If the card has not changed game zones or publicity during the effect's scope, use that card's current values.
+        J.4.2.3 If the card has changed game zones or publicity during the effect's scope, use the last value the card had in the first zone in which it had a current state.            
+    
+    J.4.3 If an effect includes a reference to X:
+        J.4.3.1 If X was defined upon playing an ability that began the effects scope, use that value for X.
+        J.4.3.2 Otherwise, X may be defined within the effect.
+        J.4.3.3 If neither of the above are true, the player whose effect it is chooses any valid value for X the first time it is referenced.
+        J.4.3.4 X must be a non-negative whole number. If it would be negative, it is 0 instead. If it would not be a whole number, and the definition does not specify which way to round it, round it up.
+    
+    J.4.4 If one of a character's vital statistics is referenced by an effect and that value is question marks, the opponent of the character's controller chooses what value to use.
+    
+    J.4.5 If an instruction references a value derived from the cost of the ability that produced it, but that ability was played without paying costs due to some effect, that instruction fails.
+
+J.5 Effect Limitations
+    J.5.1 A player's vitality may not exceed their character's maximum vitality.
+        J.5.1.1 If an effect would increase a player's vitality above its maximum, it increases it to its maximum instead.
+            Note: If the player was already at their maximum vitality, the instruction to gain vitality fails (the player does not "gain 0 vitality").
+    
+    J.5.2 No card may have two instances of the same resource symbol.
+    
+    J.5.3 If a rule effect instructs for some phase(s) or step(s) to be skipped or re-ordered, it must be active before the start of the first affected phase or step, or else that instruction fails to execute.
+
+    J.5.4 In the case of a fired effect, or the immediate effect of a response ability - if a card involved in the game event at the start of its scope has changed zones since that game event concluded, but before the effect begins to execute, the effect cannot interact with that card.
+
+
+
+K. Instruction Glossary    
+This section covers a variety of implications, descriptions, and supporting rules for terms and phrases that may be found in the instructions of a cost, effect, or in the description of a game event.
+
+K.1 Conflict Resolution    
+    K.1.1 If the instructions of an effect directly conflict with the game rules, the effect takes precedence.
+    
+    K.1.2 Effects that prohibit (using "can't", "does not", "has no", "deals no" etc.) take precedence in any conflict.
+    
+    K.1.3 If an instruction requires both players to do the same thing at once, the player whose effect it is decides which order the players do it in.
+        K.1.3.1 The act is still treated as a simultaneous action comprising a single game event.
+
+K.2 Implications
+    When not specified otherwise, the following things are implied:
+    
+    K.2.1 A reference or instruction to discard a card means to discard a card from the hand.
+    
+    K.2.2 An instruction for a player to interact with card(s) means cards that player controls.
+    
+    K.2.3 An instruction for a player to interact with card(s) allows them to choose which card(s) if there are multiple options.
+    
+    K.2.4 An instruction for a player to interact with their opponent's card(s) means for them to choose which card(s) if applicable, and then the opponent executes the interaction if applicable.
+    
+    K.2.5 If an effect's instruction includes an option, the player whose effect it is chooses one of the options.
+    
+    K.2.6 A reference to a player's foundation(s) or asset(s) means card(s) of that type in their staging area.
+    
+    K.2.7 A reference to a player's character refers to their starting character. A reference to a player's character name refers to their starting character's character name.
+    
+    K.2.8 An ability counts as an ability that causes a result, or would cause a result, if its immediate effect (or an effect created by it) could lead to that result under any circumstance.
+    
+    K.2.9 A reference to the location or state of a card whose ability was played, refers to the location or state of the card when the attempt to play the ability was initiated.
+    
+    K.2.10 A reference to a player modifying a numeric value of a card, refers to one of that player's costs or effects causing that modification.
+
+
+K.3 Definitions
+    Certain phrases or terms have particular meanings for the purposes of the game:
+
+    K.3.1 "This card", "that card", "this ability" and "that ability" refer only to the specific instance of the card or ability being referenced. Other copies of that card or ability are not included or affected.
+    
+    K.3.2 A "copy" of a card is a card with the same name.
+        K.3.2.1 Cards with no name are not copies of each other.
+        Note: Characters with the same character name are not copies of each other, unless they also have the same version. The card name of a character is the combination of their character name and version.
+    
+    K.3.3 A "copy" of an ability is an ability with the same cost and effect on a copy of the same card.
+    
+    K.3.4 "This attack" refers to the attack currently in its attack sequence.
+        K.3.4.1 "Your attack" and "Your opponent's attack" refer to "this attack" with the added requirement of being one of the effect's controller's attacks, or one of their opponent's attacks, respectively.
+            K.3.4.1.1 This includes any other qualifiers, such as "Your punch attack" or "Your opponent's mid attack".
+        K.3.4.2 "This attack", when it appears in a static effect, refers only to the attack the associated continuous ability is on, while it is undergoing an attack sequence.
+        K.3.4.3 "This attack", when it appears in a response ability, refers only to the attack that the response ability is on.
+
+    K.3.5 An "if" or "you may" condition applies that condition to the remainder of the sentence it is in.
+    
+    K.3.6 A "bonus" is the addition of some number to a card value. A "penalty" is the subtraction of some number to a card value.
+        Note: In other words, bonuses and penalties are instructions of the form "this attack gets +2 damage", "your next attack gets -2 difficulty", etc. Definition effects or instructions to return a value to its printed value are not bonuses or penalties. Effects that change a value to a specific number are also not considered bonuses or penalties. Effects that switch speed and damage are not bonuses or penalties.
+    
+    K.3.7 With n being some number, a "(minimum n)" or "(maximum n)" appearing after a bonus or penalty provides a floor or ceiling respectively to the value being modified.
+    
+    K.3.8 With n being some number, a "(minimum n)" or "(maximum n)" appearing after a definition of X (or some other variable number) provides a floor or ceiling respectively for that number.
+
+    K.3.9 A player's "next attack" is the next attack they attempt to play that turn, or the next attack of theirs to enter an attack sequence that turn, whichever comes first.
+        Note: As per G.2.1.3.3.1, this does not include attack cards played as blocks.
+        K.3.9.1 A player's "first attack", "second attack", and so on is the first/second/etc. attack within the given timeframe that matches the criteria for "next attack" in K.3.9.
+        K.3.9.2 A player's "next card" is the next card they attempt to play that turn.
+    
+    K.3.10 A card that a player "could normally play" is one that meets the resource symbol requirements enforced by E.4.1.2.
+        Note: This is the only requirement that must be met.        
+    
+    K.3.11 "During an attack" means to be within an attack sequence.    
+    
+    K.3.12 A "<card type> ability" or "<card type> effect" is an ability on a card of that type, or an effect of such an ability.    
+    
+    K.3.13 An effect that references "<trait> and <trait>" card(s) refers to card(s) that have all of the listed traits.
+
+    K.3.14 An effect that references "<trait> or <trait>" card(s) refers to card(s) that have any of the listed traits. The controller of the effect does not have to choose one of them.
+    
+    K.3.15 A card with a "printed blank text box" is a face up card with no printed keywords or printed abilities.
+    
+    K.3.16 To "search" a game zone is to look through all cards in that zone, including private and unknown cards.
+
+    K.3.17 If an effect allows a player to play or block with a card "as though it were in your hand" for some duration of time, allows the card to be played (or played as a block) at any time that card could normally be played (or played as a block) if it were in the player's hand.
+        K.3.17.1 In the case of action cards, this includes playing their abilities via playing the action card, provided the ability could have been played if the action card were in the player's hand.
+            Note: This does not allow the player to use "[Hand]" abilities, it merely covers the regular abilities of action cards.
+    
+    K.3.18 A player is "at desperation" if their vitality is less than half of their starting character's maximum vitality.
+
+    K.3.19 A player is "at deadlock" if they have more than 10 foundations in their staging area.
+
+    K.3.20 A character card that a player can "normally attach" is one that can be in their staging area without being discarded via E.2.3.
+        Note: Some rule effects cause characters with different character names to be allowed in the staging area despite E.2.3.
+
+    K.3.21 To add a card to the card pool "in any order" means to place it in any position in the card pool, moving following cards to the right one space.
+        K.3.21.1 To add a card to "the beginning" of the card pool means to place it in the first position, moving following cards to the right one space.
+    
+    K.3.22 A card's "<keyword> cost" is the cost of any abilities granted by all instances of that keyword on the card.
+
+    K.3.23 A card's <game zone> refers to whichever player's <game zone> that card is in (if it is in that zone).
+
+    K.3.24 To "play a <card type / block>" means to play a card for the indicated purpose. To "play a <card type> card" means to play a card of that card type for any reason.
+    
+
+K.4 Impacting Cards
+    K.4.1 To "destroy" a card is to add it to the discard pile from the staging area.
+
+    K.4.2 To "flip" a card is to turn a face up card face down.
+        K.4.2.1 To "unflip" a card is to turn a face down card face up.
+
+    K.4.3 To "seal" a card is to create the assigned rule effect "That card has no abilities for the rest of this turn."
+        K.4.3.1 A "sealed" card is any card with this effect assigned to it.
+
+    K.4.4 To "remove" a card, with no further specification, means to remove it from the game.
+
+    K.4.5 To "freeze" a card is to create the assigned rule effect "That card does not ready during the next Ready Step."
+        K.4.5.1 A "frozen" card is any card with this effect assigned to it.
+    
+
+K.5 Processes
+    K.5.1 If a player reveals a private or unknown card, it is revealed until the effect that revealed it completes its execution, and the opponent (if private) or both players (if unknown) have had a chance to read the card.
+    
+    K.5.2 If a player searches their deck for a card, they must shuffle it afterwards and, if there were any restrictions on the card they were allowed to choose, they must reveal it to verify that they met those restrictions.
+    
+    K.5.3 If an instruction removes more cards from a player's deck than are in the deck, that player removes the cards in their deck, cycles (see E.2.2), and then removes the remaining cards.
+    
+    K.5.4 If an instruction forces a player to "draw up to" a specified number of cards, they draw X cards in a single action, where X is equal to the specified number minus the number of cards in their hand.
+
+    K.5.5 If an effect requires a player to name a card, if they are able to uniquely identify it via its other properties, that is also sufficient.
+
+    K.5.6 If an effect requires a player to reveal and/or move a card meeting certain requirements from their hand to another zone, and they have no cards in their hand that meet those requirements, they must reveal their hand to verify this.
